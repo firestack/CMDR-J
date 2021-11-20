@@ -1,0 +1,1626 @@
+{
+  "": {
+    "name": "CommanderJ",
+    "version": "unspecified",
+    "path": "",
+    "gradle": {
+      "version": "6.8.1",
+      "type": "bin",
+      "url": "https://services.gradle.org/distributions/gradle-6.8.1-bin.zip",
+      "sha256": "fd591a34af7385730970399f473afabdb8b28d57fd97d6625c388d090039d6fd",
+      "nativeVersion": "0.22-milestone-9"
+    },
+    "dependencies": {
+      "settings": [],
+      "plugin": [],
+      "buildscript": [],
+      "project": [
+        {
+          "id": {
+            "group": "com.fasterxml",
+            "name": "oss-parent",
+            "version": "38",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "oss-parent-38.pom",
+          "path": "com/fasterxml/oss-parent/38",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/38/oss-parent-38.pom"
+          ],
+          "sha256": "c83f8f45dfdca8d0b6b3661c60b3f84780f671b12e06f91ad5d1c1a1d1f966e8"
+        },
+        {
+          "id": {
+            "group": "com.fasterxml.jackson",
+            "name": "jackson-base",
+            "version": "2.11.1",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jackson-base-2.11.1.pom",
+          "path": "com/fasterxml/jackson/jackson-base/2.11.1",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-base/2.11.1/jackson-base-2.11.1.pom"
+          ],
+          "sha256": "e052e5453b8499789d65d5da8a6ac1991449fac2740ae801b9e52a267d4f04cc"
+        },
+        {
+          "id": {
+            "group": "com.fasterxml.jackson",
+            "name": "jackson-bom",
+            "version": "2.11.1",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jackson-bom-2.11.1.pom",
+          "path": "com/fasterxml/jackson/jackson-bom/2.11.1",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.11.1/jackson-bom-2.11.1.pom"
+          ],
+          "sha256": "4fd61a95e5a1deba4ef11c696815aaec0f10f0d98e107d7c7d0ac790fe8ceedf"
+        },
+        {
+          "id": {
+            "group": "com.fasterxml.jackson",
+            "name": "jackson-parent",
+            "version": "2.11",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jackson-parent-2.11.pom",
+          "path": "com/fasterxml/jackson/jackson-parent/2.11",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.11/jackson-parent-2.11.pom"
+          ],
+          "sha256": "c1b0a13d8cfe63b40b0fae8458b99463169ed0c60f7fc963ef3f05257150cbe8"
+        },
+        {
+          "id": {
+            "group": "com.fasterxml.jackson.core",
+            "name": "jackson-annotations",
+            "version": "2.11.1",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jackson-annotations-2.11.1.jar",
+          "path": "com/fasterxml/jackson/core/jackson-annotations/2.11.1",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.11.1/jackson-annotations-2.11.1.jar"
+          ],
+          "sha256": "045e61b0b4a347d12b86cf2d0e776dea6a79204ae12095c2b08906d29e594a5a"
+        },
+        {
+          "id": {
+            "group": "com.fasterxml.jackson.core",
+            "name": "jackson-annotations",
+            "version": "2.11.1",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jackson-annotations-2.11.1.pom",
+          "path": "com/fasterxml/jackson/core/jackson-annotations/2.11.1",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.11.1/jackson-annotations-2.11.1.pom"
+          ],
+          "sha256": "6877d5ce9eb2133309cf9ee5ab1917f7bbe932f2416afc10b16f6617767b6aa7"
+        },
+        {
+          "id": {
+            "group": "com.fasterxml.jackson.core",
+            "name": "jackson-core",
+            "version": "2.11.1",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jackson-core-2.11.1.jar",
+          "path": "com/fasterxml/jackson/core/jackson-core/2.11.1",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.11.1/jackson-core-2.11.1.jar"
+          ],
+          "sha256": "25461dbfb431cb48e30118a0277671de8e8a56a3b1198492e24b2fb605d7575e"
+        },
+        {
+          "id": {
+            "group": "com.fasterxml.jackson.core",
+            "name": "jackson-core",
+            "version": "2.11.1",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jackson-core-2.11.1.pom",
+          "path": "com/fasterxml/jackson/core/jackson-core/2.11.1",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.11.1/jackson-core-2.11.1.pom"
+          ],
+          "sha256": "15f7b9030b1ec20d4a3c244317a20e79d89d52d02dd999b27bc67c5a105f0a82"
+        },
+        {
+          "id": {
+            "group": "com.fasterxml.jackson.core",
+            "name": "jackson-databind",
+            "version": "2.11.1",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jackson-databind-2.11.1.jar",
+          "path": "com/fasterxml/jackson/core/jackson-databind/2.11.1",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.11.1/jackson-databind-2.11.1.jar"
+          ],
+          "sha256": "b486be39d9ff4ae8bc7782792f2ea70f3a7bdaee5bd13780d295d7674231afd6"
+        },
+        {
+          "id": {
+            "group": "com.fasterxml.jackson.core",
+            "name": "jackson-databind",
+            "version": "2.11.1",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jackson-databind-2.11.1.pom",
+          "path": "com/fasterxml/jackson/core/jackson-databind/2.11.1",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.11.1/jackson-databind-2.11.1.pom"
+          ],
+          "sha256": "47f717d801e4577107ddf61172ed7587902ebace5248e07337b90baf8aab2400"
+        },
+        {
+          "id": {
+            "group": "io.github.microutils",
+            "name": "kotlin-logging",
+            "version": "1.5.4",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "kotlin-logging-1.5.4.jar",
+          "path": "io/github/microutils/kotlin-logging/1.5.4",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/io/github/microutils/kotlin-logging/1.5.4/kotlin-logging-1.5.4.jar"
+          ],
+          "sha256": "4992504fd3c6ecdf9ed10874b9508e758bb908af9e9d7af19a61e9afb6b7e27a"
+        },
+        {
+          "id": {
+            "group": "io.github.microutils",
+            "name": "kotlin-logging",
+            "version": "1.5.4",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "kotlin-logging-1.5.4.pom",
+          "path": "io/github/microutils/kotlin-logging/1.5.4",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/io/github/microutils/kotlin-logging/1.5.4/kotlin-logging-1.5.4.pom"
+          ],
+          "sha256": "4728eddd64e6ae3e1f205a775c6a327b24bd990b86d528584a17450a8b5f00d6"
+        },
+        {
+          "id": {
+            "group": "javax.annotation",
+            "name": "javax.annotation-api",
+            "version": "1.3.2",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "javax.annotation-api-1.3.2.jar",
+          "path": "javax/annotation/javax.annotation-api/1.3.2",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar"
+          ],
+          "sha256": "e04ba5195bcd555dc95650f7cc614d151e4bcd52d29a10b8aa2197f3ab89ab9b"
+        },
+        {
+          "id": {
+            "group": "javax.annotation",
+            "name": "javax.annotation-api",
+            "version": "1.3.2",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "javax.annotation-api-1.3.2.pom",
+          "path": "javax/annotation/javax.annotation-api/1.3.2",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.pom"
+          ],
+          "sha256": "46a4a251ca406e78e4853d7a2bae83282844a4992851439ee9a1f23716f06b97"
+        },
+        {
+          "id": {
+            "group": "javax.servlet",
+            "name": "javax.servlet-api",
+            "version": "3.1.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "javax.servlet-api-3.1.0.jar",
+          "path": "javax/servlet/javax.servlet-api/3.1.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar"
+          ],
+          "sha256": "af456b2dd41c4e82cf54f3e743bc678973d9fe35bd4d3071fa05c7e5333b8482"
+        },
+        {
+          "id": {
+            "group": "javax.servlet",
+            "name": "javax.servlet-api",
+            "version": "3.1.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "javax.servlet-api-3.1.0.pom",
+          "path": "javax/servlet/javax.servlet-api/3.1.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.pom"
+          ],
+          "sha256": "b31109e22ea3f2df1ad7955432e718a35def50ae6c19698034afa8a0cf9e9069"
+        },
+        {
+          "id": {
+            "group": "junit",
+            "name": "junit",
+            "version": "4.11",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "junit-4.11.jar",
+          "path": "junit/junit/4.11",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/junit/junit/4.11/junit-4.11.jar"
+          ],
+          "sha256": "90a8e1603eeca48e7e879f3afbc9560715322985f39a274f6f6070b43f9d06fe"
+        },
+        {
+          "id": {
+            "group": "junit",
+            "name": "junit",
+            "version": "4.11",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "junit-4.11.pom",
+          "path": "junit/junit/4.11",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/junit/junit/4.11/junit-4.11.pom"
+          ],
+          "sha256": "18ad8b0ae9e65a9195d04e25427dfe8b58175abcdae875a5a406aee38bddfb26"
+        },
+        {
+          "id": {
+            "group": "net.java",
+            "name": "jvnet-parent",
+            "version": "3",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jvnet-parent-3.pom",
+          "path": "net/java/jvnet-parent/3",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/net/java/jvnet-parent/3/jvnet-parent-3.pom"
+          ],
+          "sha256": "30f5789efa39ddbf96095aada3fc1260c4561faf2f714686717cb2dc5049475a"
+        },
+        {
+          "id": {
+            "group": "org.apache",
+            "name": "apache",
+            "version": "16",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "apache-16.pom",
+          "path": "org/apache/apache/16",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/apache/16/apache-16.pom"
+          ],
+          "sha256": "9f85ff2fd7d6cb3097aa47fb419ee7f0ebe869109f98aba9f4eca3f49e74a40e"
+        },
+        {
+          "id": {
+            "group": "org.apache.commons",
+            "name": "commons-compress",
+            "version": "1.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "commons-compress-1.12.jar",
+          "path": "org/apache/commons/commons-compress/1.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.12/commons-compress-1.12.jar"
+          ],
+          "sha256": "2c1542faf343185b7cab9c3d55c8ae5471d6d095d3887a4adefdbdf2984dc0b6"
+        },
+        {
+          "id": {
+            "group": "org.apache.commons",
+            "name": "commons-compress",
+            "version": "1.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "commons-compress-1.12.pom",
+          "path": "org/apache/commons/commons-compress/1.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.12/commons-compress-1.12.pom"
+          ],
+          "sha256": "b787d574c851505e76212968b9ae1641ea79804aef7f5a2cee2a01cd4055213a"
+        },
+        {
+          "id": {
+            "group": "org.apache.commons",
+            "name": "commons-parent",
+            "version": "39",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "commons-parent-39.pom",
+          "path": "org/apache/commons/commons-parent/39",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/39/commons-parent-39.pom"
+          ],
+          "sha256": "87cd27e1a02a5c3eb6d85059ce98696bb1b44c2b8b650f0567c86df60fa61da7"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jdt",
+            "name": "ecj",
+            "version": "3.19.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "ecj-3.19.0.jar",
+          "path": "org/eclipse/jdt/ecj/3.19.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jdt/ecj/3.19.0/ecj-3.19.0.jar"
+          ],
+          "sha256": "eedc5942f164696b9a8a8bc62a9b29516f82f2c7010946de1c7e6c8db36c63f7"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jdt",
+            "name": "ecj",
+            "version": "3.19.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "ecj-3.19.0.pom",
+          "path": "org/eclipse/jdt/ecj/3.19.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jdt/ecj/3.19.0/ecj-3.19.0.pom"
+          ],
+          "sha256": "7c8649bcbe8294937914217072c953fd66e7ca89975d13efecf7e4721cb43d13"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "apache-jsp",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "apache-jsp-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/apache-jsp/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/apache-jsp/9.4.36.v20210114/apache-jsp-9.4.36.v20210114.jar"
+          ],
+          "sha256": "ca62fd4464e0378509502fc2d752a91783c435503041857dba515863774a999a"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "apache-jsp",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "apache-jsp-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/apache-jsp/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/apache-jsp/9.4.36.v20210114/apache-jsp-9.4.36.v20210114.pom"
+          ],
+          "sha256": "bb1f8122cf9ca4a9d3d5dff0cb75288cc0cd80667f467a9159ae1658eb42fe58"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-annotations",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-annotations-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/jetty-annotations/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-annotations/9.4.36.v20210114/jetty-annotations-9.4.36.v20210114.jar"
+          ],
+          "sha256": "90d2c7f04569fe2d38120db72c213a066b5a03415b4fd4dd7d407ec880360f5b"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-annotations",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-annotations-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-annotations/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-annotations/9.4.36.v20210114/jetty-annotations-9.4.36.v20210114.pom"
+          ],
+          "sha256": "4f0d81b13dfae9a079813ed1a30c877e137899f1a74ca934c3ece1ebaba72c5c"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-client",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-client-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/jetty-client/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-client/9.4.36.v20210114/jetty-client-9.4.36.v20210114.jar"
+          ],
+          "sha256": "c7292753d34352c2294ab64405fb9f70c1d8e11d47204015563f4efd0ac4bf90"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-client",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-client-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-client/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-client/9.4.36.v20210114/jetty-client-9.4.36.v20210114.pom"
+          ],
+          "sha256": "9c2cd08f81a5213dbf983079ec3ddd45f5647c3a3c6f257148e15df4f3ca7478"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-continuation",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-continuation-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/jetty-continuation/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-continuation/9.4.36.v20210114/jetty-continuation-9.4.36.v20210114.jar"
+          ],
+          "sha256": "b4c8ef5ff07fbd51c8a996f0b435ac3a6cd19627581490d0134b113e3b33719e"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-continuation",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-continuation-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-continuation/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-continuation/9.4.36.v20210114/jetty-continuation-9.4.36.v20210114.pom"
+          ],
+          "sha256": "de1d91958879164329a1d203907a7dbeb444c44dd71bdc58a0a6ec1f3ed10716"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-http",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-http-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/jetty-http/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-http/9.4.36.v20210114/jetty-http-9.4.36.v20210114.jar"
+          ],
+          "sha256": "965ae0ada5400caf6231df801096b74273cc845f5ae2151b65e637179d932ffa"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-http",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-http-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-http/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-http/9.4.36.v20210114/jetty-http-9.4.36.v20210114.pom"
+          ],
+          "sha256": "3b51ad859d5cb4daaef8ef93d598c21d75823adbe47758364625ba090cd8e542"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-io",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-io-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/jetty-io/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-io/9.4.36.v20210114/jetty-io-9.4.36.v20210114.jar"
+          ],
+          "sha256": "2e074d824110a5fe843a4dd00cb2b5eab5021d1f9938b9067deb311aeecaa261"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-io",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-io-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-io/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-io/9.4.36.v20210114/jetty-io-9.4.36.v20210114.pom"
+          ],
+          "sha256": "a908fdd6388a91f158317fe1975814f885946035d7ea19d7709ee2394b722f6d"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-jmx",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-jmx-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/jetty-jmx/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-jmx/9.4.36.v20210114/jetty-jmx-9.4.36.v20210114.jar"
+          ],
+          "sha256": "23d636a81a96b62f1a565653eb93f9e458da0d2d40b93ed54bb453507811991e"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-jmx",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-jmx-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-jmx/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-jmx/9.4.36.v20210114/jetty-jmx-9.4.36.v20210114.pom"
+          ],
+          "sha256": "3eff8c0faf2720233535fbf23dca8cbc2c6c44556e89f3825274dc47c791c1e7"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-jndi",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-jndi-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/jetty-jndi/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-jndi/9.4.36.v20210114/jetty-jndi-9.4.36.v20210114.jar"
+          ],
+          "sha256": "377d1153604af6e26c9f6743bb2944346bf8a68aaeb638abc1c77d1e52bd0ce3"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-jndi",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-jndi-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-jndi/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-jndi/9.4.36.v20210114/jetty-jndi-9.4.36.v20210114.pom"
+          ],
+          "sha256": "7db7d9bf003b8864da6321484675f708d10453e9901df11faa140e39078dc34c"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-plus",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-plus-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/jetty-plus/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-plus/9.4.36.v20210114/jetty-plus-9.4.36.v20210114.jar"
+          ],
+          "sha256": "c232426fabb68acdcf065c18db71f8db7a6c89d6183c91014297d87f36dec8d9"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-plus",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-plus-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-plus/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-plus/9.4.36.v20210114/jetty-plus-9.4.36.v20210114.pom"
+          ],
+          "sha256": "0177c79ec1d09c38b21278bd374d2453ce282e2d94bb12ddd507f1c0bf9f34bd"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-project",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-project-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-project/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-project/9.4.36.v20210114/jetty-project-9.4.36.v20210114.pom"
+          ],
+          "sha256": "dae9771fbd2ae9314e3d0ea7ee3d7cb2d6b3643edc5d73d491f0ac150043f7ec"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-proxy",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-proxy-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/jetty-proxy/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-proxy/9.4.36.v20210114/jetty-proxy-9.4.36.v20210114.jar"
+          ],
+          "sha256": "c1f9973683c8c0ea5bc182a77e2bb03696c50578b23f8e1d773139be2e7fbaf7"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-proxy",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-proxy-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-proxy/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-proxy/9.4.36.v20210114/jetty-proxy-9.4.36.v20210114.pom"
+          ],
+          "sha256": "7ee15561bfbd83d54fd18f6c021d056d7cb5bab3a4d7d307da1f2d0d86b72c28"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-security",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-security-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/jetty-security/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-security/9.4.36.v20210114/jetty-security-9.4.36.v20210114.jar"
+          ],
+          "sha256": "f09723ed9634c46b1306a5569b2d709ca50449d7081f507b8484e225b4585b82"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-security",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-security-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-security/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-security/9.4.36.v20210114/jetty-security-9.4.36.v20210114.pom"
+          ],
+          "sha256": "cd3a1231f4fddbcfe35d29b015c28b1c9e76b239cf8275b953a23b13011778c4"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-server",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-server-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/jetty-server/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-server/9.4.36.v20210114/jetty-server-9.4.36.v20210114.jar"
+          ],
+          "sha256": "ba2492242dc29e4cae66d9082df00659bd39cbfd74fcd60733a6ff3bb7386172"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-server",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-server-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-server/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-server/9.4.36.v20210114/jetty-server-9.4.36.v20210114.pom"
+          ],
+          "sha256": "0a321c52cedbe44741fc047daa4703d323d83e66d94f960c82615dd0c8f2429b"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-servlet",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-servlet-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/jetty-servlet/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-servlet/9.4.36.v20210114/jetty-servlet-9.4.36.v20210114.jar"
+          ],
+          "sha256": "809657f9a7c77f4407a88e4e3055d4f0af8953f41daf9db7e267db54a8de50a4"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-servlet",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-servlet-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-servlet/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-servlet/9.4.36.v20210114/jetty-servlet-9.4.36.v20210114.pom"
+          ],
+          "sha256": "497595e8829300d87d6f41c97d35659ddd8b255b98a291aa6c49e20ec5ab058a"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-servlets",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-servlets-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/jetty-servlets/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-servlets/9.4.36.v20210114/jetty-servlets-9.4.36.v20210114.jar"
+          ],
+          "sha256": "01208010006ce7e87d6f240bf2466537c788c24ad89ba167914bcfaf8b667a44"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-servlets",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-servlets-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-servlets/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-servlets/9.4.36.v20210114/jetty-servlets-9.4.36.v20210114.pom"
+          ],
+          "sha256": "4eac298fb33617d963e089fcad3d9dcd3f2da7d87319d290764741d2c3a92731"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-util",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-util-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/jetty-util/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-util/9.4.36.v20210114/jetty-util-9.4.36.v20210114.jar"
+          ],
+          "sha256": "fe9c6f8e063dfc12ea62957069d4d48d3d4230d20bf77488aa14d3dff275d462"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-util",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-util-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-util/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-util/9.4.36.v20210114/jetty-util-9.4.36.v20210114.pom"
+          ],
+          "sha256": "22c2230913442eda42d36172949296143b6104fea19fe1cd4f75d40027f7191d"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-util-ajax",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-util-ajax-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/jetty-util-ajax/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-util-ajax/9.4.36.v20210114/jetty-util-ajax-9.4.36.v20210114.jar"
+          ],
+          "sha256": "3472be37514587c0c9403020df2980a3815abc05055af2bf5e50abe0973e5a7e"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-util-ajax",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-util-ajax-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-util-ajax/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-util-ajax/9.4.36.v20210114/jetty-util-ajax-9.4.36.v20210114.pom"
+          ],
+          "sha256": "b493af36037acb72906f5458c48c07f9c67dd41eec8f1da16cba6fe54304740d"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-webapp",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-webapp-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/jetty-webapp/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-webapp/9.4.36.v20210114/jetty-webapp-9.4.36.v20210114.jar"
+          ],
+          "sha256": "ad19224a14c7e639ee409392f41f2c5492765f7634a177716963a6a9186c5210"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-webapp",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-webapp-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-webapp/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-webapp/9.4.36.v20210114/jetty-webapp-9.4.36.v20210114.pom"
+          ],
+          "sha256": "35697ee2e89223c81f3e0f6e6898ed36c2f5bc28ac7828b74af409718b2fc6e5"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-xml",
+            "version": "9.4.36.v20210114",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-xml-9.4.36.v20210114.jar",
+          "path": "org/eclipse/jetty/jetty-xml/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-xml/9.4.36.v20210114/jetty-xml-9.4.36.v20210114.jar"
+          ],
+          "sha256": "47c318294410fe797c4e8114e4bc56b3bbb94af1d223f096680492ebea418aad"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty",
+            "name": "jetty-xml",
+            "version": "9.4.36.v20210114",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-xml-9.4.36.v20210114.pom",
+          "path": "org/eclipse/jetty/jetty-xml/9.4.36.v20210114",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-xml/9.4.36.v20210114/jetty-xml-9.4.36.v20210114.pom"
+          ],
+          "sha256": "30d84e7cb31ccd16f3ec6273c136dfaa18175e83894ce96dd22c13a3f7101b37"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty.toolchain",
+            "name": "jetty-schemas",
+            "version": "3.1.2",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jetty-schemas-3.1.2.jar",
+          "path": "org/eclipse/jetty/toolchain/jetty-schemas/3.1.2",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/toolchain/jetty-schemas/3.1.2/jetty-schemas-3.1.2.jar"
+          ],
+          "sha256": "40e2ae14ab6329e8eb6e6e6ba72e3b7091c69e3d28ac5d60ac5a93eadb81c60a"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty.toolchain",
+            "name": "jetty-schemas",
+            "version": "3.1.2",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-schemas-3.1.2.pom",
+          "path": "org/eclipse/jetty/toolchain/jetty-schemas/3.1.2",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/toolchain/jetty-schemas/3.1.2/jetty-schemas-3.1.2.pom"
+          ],
+          "sha256": "360e6b7818fb9020eb2236eb189c0cd5c1f8f4a8df6ea40203c48344577614fa"
+        },
+        {
+          "id": {
+            "group": "org.eclipse.jetty.toolchain",
+            "name": "jetty-toolchain",
+            "version": "1.6",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jetty-toolchain-1.6.pom",
+          "path": "org/eclipse/jetty/toolchain/jetty-toolchain/1.6",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/eclipse/jetty/toolchain/jetty-toolchain/1.6/jetty-toolchain-1.6.pom"
+          ],
+          "sha256": "45563f1175d9859c1c066a0980fbdb9f6bb4c6d3c12e05d89579bb1783f47b6c"
+        },
+        {
+          "id": {
+            "group": "org.hamcrest",
+            "name": "hamcrest-core",
+            "version": "1.3",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "hamcrest-core-1.3.jar",
+          "path": "org/hamcrest/hamcrest-core/1.3",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"
+          ],
+          "sha256": "66fdef91e9739348df7a096aa384a5685f4e875584cce89386a7a47251c4d8e9"
+        },
+        {
+          "id": {
+            "group": "org.hamcrest",
+            "name": "hamcrest-core",
+            "version": "1.3",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "hamcrest-core-1.3.pom",
+          "path": "org/hamcrest/hamcrest-core/1.3",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom"
+          ],
+          "sha256": "fde386a7905173a1b103de6ab820727584b50d0e32282e2797787c20a64ffa93"
+        },
+        {
+          "id": {
+            "group": "org.hamcrest",
+            "name": "hamcrest-parent",
+            "version": "1.3",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "hamcrest-parent-1.3.pom",
+          "path": "org/hamcrest/hamcrest-parent/1.3",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom"
+          ],
+          "sha256": "6d535f94efb663bdb682c9f27a50335394688009642ba7a9677504bc1be4129b"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains",
+            "name": "annotations",
+            "version": "15.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "annotations-15.0.jar",
+          "path": "org/jetbrains/annotations/15.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.jar"
+          ],
+          "sha256": "d74599cef2b363fdb3cdd3198515aca090e3ea3e98b2ba473c6e46f114dab272"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains",
+            "name": "annotations",
+            "version": "15.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "annotations-15.0.pom",
+          "path": "org/jetbrains/annotations/15.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.pom"
+          ],
+          "sha256": "6726678ac07b481b5e35d3aeefce526b95fd18ede33d0d85cb1c688bcdf0e840"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains.kotlin",
+            "name": "kotlin-stdlib",
+            "version": "1.3.10",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "kotlin-stdlib-1.3.10.jar",
+          "path": "org/jetbrains/kotlin/kotlin-stdlib/1.3.10",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.3.10/kotlin-stdlib-1.3.10.jar"
+          ],
+          "sha256": "9b9650550fac559f7db64d988123399ea3da7cb776bfb13b9a3ed818eef26969"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains.kotlin",
+            "name": "kotlin-stdlib",
+            "version": "1.3.10",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "kotlin-stdlib-1.3.10.pom",
+          "path": "org/jetbrains/kotlin/kotlin-stdlib/1.3.10",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.3.10/kotlin-stdlib-1.3.10.pom"
+          ],
+          "sha256": "7e23d980001049435a15503343563c7015447ba43bc05ec225a700f8a936b2e6"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains.kotlin",
+            "name": "kotlin-stdlib-common",
+            "version": "1.3.10",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "kotlin-stdlib-common-1.3.10.jar",
+          "path": "org/jetbrains/kotlin/kotlin-stdlib-common/1.3.10",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.10/kotlin-stdlib-common-1.3.10.jar"
+          ],
+          "sha256": "7ebf12fdadc5fe80f7ed4dbeffb16618cee1c23cbff0b0489a254174500acc68"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains.kotlin",
+            "name": "kotlin-stdlib-common",
+            "version": "1.3.10",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "kotlin-stdlib-common-1.3.10.pom",
+          "path": "org/jetbrains/kotlin/kotlin-stdlib-common/1.3.10",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.10/kotlin-stdlib-common-1.3.10.pom"
+          ],
+          "sha256": "e00ef127241bfaea8c4e59eae5612fd8baa18f27def90c049d5b462c588fc725"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains.xodus",
+            "name": "xodus-compress",
+            "version": "1.3.232",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "xodus-compress-1.3.232.jar",
+          "path": "org/jetbrains/xodus/xodus-compress/1.3.232",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/xodus/xodus-compress/1.3.232/xodus-compress-1.3.232.jar"
+          ],
+          "sha256": "00f3f88c37018659102a356403d741c1cffc901e17f90c2d20f11a5f3ec4e5e3"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains.xodus",
+            "name": "xodus-compress",
+            "version": "1.3.232",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "xodus-compress-1.3.232.pom",
+          "path": "org/jetbrains/xodus/xodus-compress/1.3.232",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/xodus/xodus-compress/1.3.232/xodus-compress-1.3.232.pom"
+          ],
+          "sha256": "bbbfe14f0c2a8218c4e4725f576d06d4af74c0c3d001e41497424a06cbd9e770"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains.xodus",
+            "name": "xodus-entity-store",
+            "version": "1.3.232",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "xodus-entity-store-1.3.232.jar",
+          "path": "org/jetbrains/xodus/xodus-entity-store/1.3.232",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/xodus/xodus-entity-store/1.3.232/xodus-entity-store-1.3.232.jar"
+          ],
+          "sha256": "7004cad90c35f16063be9712dcf3bedad2e3b6f24a7719b477310bb1ad38e4ac"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains.xodus",
+            "name": "xodus-entity-store",
+            "version": "1.3.232",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "xodus-entity-store-1.3.232.pom",
+          "path": "org/jetbrains/xodus/xodus-entity-store/1.3.232",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/xodus/xodus-entity-store/1.3.232/xodus-entity-store-1.3.232.pom"
+          ],
+          "sha256": "38ef046e87721e0401629ed2f2dd151549fb43af9ceb0d0e40c7f8f071ccfccf"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains.xodus",
+            "name": "xodus-environment",
+            "version": "1.3.232",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "xodus-environment-1.3.232.jar",
+          "path": "org/jetbrains/xodus/xodus-environment/1.3.232",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/xodus/xodus-environment/1.3.232/xodus-environment-1.3.232.jar"
+          ],
+          "sha256": "12aaa194525935b9d839f76592f666c3296ae7fda37439f724cc91011dc317d2"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains.xodus",
+            "name": "xodus-environment",
+            "version": "1.3.232",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "xodus-environment-1.3.232.pom",
+          "path": "org/jetbrains/xodus/xodus-environment/1.3.232",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/xodus/xodus-environment/1.3.232/xodus-environment-1.3.232.pom"
+          ],
+          "sha256": "5d6ed8e168432d0879016be1e3d49542d367495d3a56bed29219b65633651388"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains.xodus",
+            "name": "xodus-openAPI",
+            "version": "1.3.232",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "xodus-openAPI-1.3.232.jar",
+          "path": "org/jetbrains/xodus/xodus-openAPI/1.3.232",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/xodus/xodus-openAPI/1.3.232/xodus-openAPI-1.3.232.jar"
+          ],
+          "sha256": "7d29653ed98ca9ffdd311d31f71ec8618caa6926e347b2ff394c4d4a8162425e"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains.xodus",
+            "name": "xodus-openAPI",
+            "version": "1.3.232",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "xodus-openAPI-1.3.232.pom",
+          "path": "org/jetbrains/xodus/xodus-openAPI/1.3.232",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/xodus/xodus-openAPI/1.3.232/xodus-openAPI-1.3.232.pom"
+          ],
+          "sha256": "71212f30a119772867ac1508c10757ad2781610913c34e7f87cbe4c1dd3d5108"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains.xodus",
+            "name": "xodus-utils",
+            "version": "1.3.232",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "xodus-utils-1.3.232.jar",
+          "path": "org/jetbrains/xodus/xodus-utils/1.3.232",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/xodus/xodus-utils/1.3.232/xodus-utils-1.3.232.jar"
+          ],
+          "sha256": "0bc3570542aeb0edc48e80d1ddfe90eec4d561982b077ea5fbc70f659f9e9377"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains.xodus",
+            "name": "xodus-utils",
+            "version": "1.3.232",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "xodus-utils-1.3.232.pom",
+          "path": "org/jetbrains/xodus/xodus-utils/1.3.232",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/xodus/xodus-utils/1.3.232/xodus-utils-1.3.232.pom"
+          ],
+          "sha256": "740b0d11bb5e541d077dda512527c7d0835fce8422983fff73de682ffe4aae30"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains.xodus",
+            "name": "xodus-vfs",
+            "version": "1.3.232",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "xodus-vfs-1.3.232.jar",
+          "path": "org/jetbrains/xodus/xodus-vfs/1.3.232",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/xodus/xodus-vfs/1.3.232/xodus-vfs-1.3.232.jar"
+          ],
+          "sha256": "fbcc4393c27b094a34d8f9ef9adcd6efaeadfc0bad1e4166aa52b71d8c830259"
+        },
+        {
+          "id": {
+            "group": "org.jetbrains.xodus",
+            "name": "xodus-vfs",
+            "version": "1.3.232",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "xodus-vfs-1.3.232.pom",
+          "path": "org/jetbrains/xodus/xodus-vfs/1.3.232",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jetbrains/xodus/xodus-vfs/1.3.232/xodus-vfs-1.3.232.pom"
+          ],
+          "sha256": "0ea2a5a3e1fb16b6a9aa61859a6de4dcb8123ec87adb81aac340c9541900eeae"
+        },
+        {
+          "id": {
+            "group": "org.mortbay.jasper",
+            "name": "apache-el",
+            "version": "8.5.54",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "apache-el-8.5.54.jar",
+          "path": "org/mortbay/jasper/apache-el/8.5.54",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/mortbay/jasper/apache-el/8.5.54/apache-el-8.5.54.jar"
+          ],
+          "sha256": "122ad2ce3f8a4add7b7700ed62ba4f093c75ceaa2af3c4110fe4dd1d02819e2f"
+        },
+        {
+          "id": {
+            "group": "org.mortbay.jasper",
+            "name": "apache-el",
+            "version": "8.5.54",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "apache-el-8.5.54.pom",
+          "path": "org/mortbay/jasper/apache-el/8.5.54",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/mortbay/jasper/apache-el/8.5.54/apache-el-8.5.54.pom"
+          ],
+          "sha256": "e2e00957e5a16ab16ae5da1734a255e530b2a280d52ef744b07e7b7af7799262"
+        },
+        {
+          "id": {
+            "group": "org.mortbay.jasper",
+            "name": "apache-jsp",
+            "version": "8.5.54",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "apache-jsp-8.5.54.jar",
+          "path": "org/mortbay/jasper/apache-jsp/8.5.54",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/mortbay/jasper/apache-jsp/8.5.54/apache-jsp-8.5.54.jar"
+          ],
+          "sha256": "6aa8ae9393eaf644225f16535603fdd78c2bbaafe26ca8e67bf15c4737b758c1"
+        },
+        {
+          "id": {
+            "group": "org.mortbay.jasper",
+            "name": "apache-jsp",
+            "version": "8.5.54",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "apache-jsp-8.5.54.pom",
+          "path": "org/mortbay/jasper/apache-jsp/8.5.54",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/mortbay/jasper/apache-jsp/8.5.54/apache-jsp-8.5.54.pom"
+          ],
+          "sha256": "f857c5ad84238fe89573ead96d0d66676c427b8526f1adaf8af0ed5c72766590"
+        },
+        {
+          "id": {
+            "group": "org.mortbay.jasper",
+            "name": "jasper-jsp",
+            "version": "8.5.54",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jasper-jsp-8.5.54.pom",
+          "path": "org/mortbay/jasper/jasper-jsp/8.5.54",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/mortbay/jasper/jasper-jsp/8.5.54/jasper-jsp-8.5.54.pom"
+          ],
+          "sha256": "5ebd3a1921f0e46ab98138394dfa8fa181727c407d0a2c99806199e88efad10b"
+        },
+        {
+          "id": {
+            "group": "org.ow2",
+            "name": "ow2",
+            "version": "1.5",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "ow2-1.5.pom",
+          "path": "org/ow2/ow2/1.5",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/ow2/ow2/1.5/ow2-1.5.pom"
+          ],
+          "sha256": "0f8a1b116e760b8fe6389c51b84e4b07a70fc11082d4f936e453b583dd50b43b"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm",
+            "version": "9.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "asm-9.0.jar",
+          "path": "org/ow2/asm/asm/9.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.0/asm-9.0.jar"
+          ],
+          "sha256": "0df97574914aee92fd349d0cb4e00f3345d45b2c239e0bb50f0a90ead47888e0"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm",
+            "version": "9.0",
+            "type": "module",
+            "extension": "module"
+          },
+          "name": "asm-9.0.module",
+          "path": "org/ow2/asm/asm/9.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.0/asm-9.0.module"
+          ],
+          "sha256": "8af81096ed3affa39a4729fc900a55b663894911d67c4d4bef0ea424393dd3f9"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm",
+            "version": "9.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "asm-9.0.pom",
+          "path": "org/ow2/asm/asm/9.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.0/asm-9.0.pom"
+          ],
+          "sha256": "de0355590dd1bfcccdc8d79024ae992972e855268acedb9ad682d085e03a94ad"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm-analysis",
+            "version": "9.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "asm-analysis-9.0.jar",
+          "path": "org/ow2/asm/asm-analysis/9.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/9.0/asm-analysis-9.0.jar"
+          ],
+          "sha256": "2d46de6df856a4daac9aa534459ab7287eb80584e9109850405e5b302dc9c2a6"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm-analysis",
+            "version": "9.0",
+            "type": "module",
+            "extension": "module"
+          },
+          "name": "asm-analysis-9.0.module",
+          "path": "org/ow2/asm/asm-analysis/9.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/9.0/asm-analysis-9.0.module"
+          ],
+          "sha256": "6e02aafb4637979c7cdc3daa3047a88b40f3e1071bdbbd0c7f1cd5da7ac38454"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm-analysis",
+            "version": "9.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "asm-analysis-9.0.pom",
+          "path": "org/ow2/asm/asm-analysis/9.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/9.0/asm-analysis-9.0.pom"
+          ],
+          "sha256": "4af8ad8b9e0b3b104b1c6d0d8f97faa61222aae02d69f918450655b8ebab47dd"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm-commons",
+            "version": "9.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "asm-commons-9.0.jar",
+          "path": "org/ow2/asm/asm-commons/9.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.0/asm-commons-9.0.jar"
+          ],
+          "sha256": "1b9090acb7e67bd4ed2f2cfb002063316d79cecace237bd07cc4f7f1b302092f"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm-commons",
+            "version": "9.0",
+            "type": "module",
+            "extension": "module"
+          },
+          "name": "asm-commons-9.0.module",
+          "path": "org/ow2/asm/asm-commons/9.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.0/asm-commons-9.0.module"
+          ],
+          "sha256": "58880e03e9196f566c998186f58bd0af41c77a04ba841664f80377ba0665f97c"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm-commons",
+            "version": "9.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "asm-commons-9.0.pom",
+          "path": "org/ow2/asm/asm-commons/9.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.0/asm-commons-9.0.pom"
+          ],
+          "sha256": "10e7738440827494e2f097db69d34386435a515ec729796fcb661f2d5bb3f776"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm-tree",
+            "version": "9.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "asm-tree-9.0.jar",
+          "path": "org/ow2/asm/asm-tree/9.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.0/asm-tree-9.0.jar"
+          ],
+          "sha256": "e2c25f332eb95861883a8568e45aac5e77d140d0fe961ae8eb9a474ec876e00d"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm-tree",
+            "version": "9.0",
+            "type": "module",
+            "extension": "module"
+          },
+          "name": "asm-tree-9.0.module",
+          "path": "org/ow2/asm/asm-tree/9.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.0/asm-tree-9.0.module"
+          ],
+          "sha256": "b38cbdd2c47fa4f29ab680c18954c7216d0afd28692221cd288c1cc7b9d9641c"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm-tree",
+            "version": "9.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "asm-tree-9.0.pom",
+          "path": "org/ow2/asm/asm-tree/9.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.0/asm-tree-9.0.pom"
+          ],
+          "sha256": "635d709dfb22110e1f5c0290f56ce36689c3ff732221a2dff0f1d93b6598a4e7"
+        },
+        {
+          "id": {
+            "group": "org.slf4j",
+            "name": "slf4j-api",
+            "version": "2.0.0-alpha1",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "slf4j-api-2.0.0-alpha1.jar",
+          "path": "org/slf4j/slf4j-api/2.0.0-alpha1",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.0-alpha1/slf4j-api-2.0.0-alpha1.jar"
+          ],
+          "sha256": "8df06cc146b8638a24cefb669d20f4bdb2c4497d5047c548a0a190df6f97c3a5"
+        },
+        {
+          "id": {
+            "group": "org.slf4j",
+            "name": "slf4j-api",
+            "version": "2.0.0-alpha1",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "slf4j-api-2.0.0-alpha1.pom",
+          "path": "org/slf4j/slf4j-api/2.0.0-alpha1",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.0-alpha1/slf4j-api-2.0.0-alpha1.pom"
+          ],
+          "sha256": "a775e6bbf89895978ea3b702aa759fd42c0f128e63d0a589fd5cf5d8afbf5451"
+        },
+        {
+          "id": {
+            "group": "org.slf4j",
+            "name": "slf4j-parent",
+            "version": "2.0.0-alpha1",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "slf4j-parent-2.0.0-alpha1.pom",
+          "path": "org/slf4j/slf4j-parent/2.0.0-alpha1",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/2.0.0-alpha1/slf4j-parent-2.0.0-alpha1.pom"
+          ],
+          "sha256": "fd3edb9fd9b7cabd67a0c29c0c9c0a6d1ae7a40053956aec281f42ccad1bdcf1"
+        }
+      ]
+    }
+  }
+}
