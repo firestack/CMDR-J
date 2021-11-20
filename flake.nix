@@ -12,6 +12,9 @@
   in {
 
     packages.cmdr-j = pkgs.callPackage ./default.nix {};
+    packages.cmdr-j-standalone = pkgs.callPackage ./graalvm.nix {
+      inherit (self.packages.${system}) cmdr-j;
+    };
 
     defaultPackage = self.packages.${system}.cmdr-j;
 
