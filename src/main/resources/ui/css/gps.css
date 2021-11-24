@@ -52,6 +52,9 @@
 .scaleSlider
 {
     margin: 1em;
+
+    width: 100%;
+    width: -moz-available;
     width: -webkit-fill-available;
 }
 
