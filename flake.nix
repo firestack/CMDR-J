@@ -63,14 +63,14 @@
 
 				# Build the actual crate itself, reusing the dependency
 				# artifacts from above.
-				my-crate = craneLib.buildPackage (commonArgs // {
+				cmdr-rs = craneLib.buildPackage (commonArgs // {
 					inherit cargoArtifacts;
 				});
 			in
 			{
 				checks = {
 					# Build the crate as part of `nix flake check` for convenience
-					inherit my-crate;
+					inherit cmdr-rs;
 
 					# Run clippy (and deny all warnings) on the crate source,
 					# again, resuing the dependency artifacts from above.
@@ -78,29 +78,29 @@
 					# Note that this is done as a separate derivation so that
 					# we can block the CI if there are issues here, but not
 					# prevent downstream consumers from building our crate by itself.
-					my-crate-clippy = craneLib.cargoClippy (commonArgs // {
+					cmdr-rs-clippy = craneLib.cargoClippy (commonArgs // {
 						inherit cargoArtifacts;
 						cargoClippyExtraArgs = "--all-targets -- --deny warnings";
 					});
 
-					my-crate-doc = craneLib.cargoDoc (commonArgs // {
+					cmdr-rs-doc = craneLib.cargoDoc (commonArgs // {
 						inherit cargoArtifacts;
 					});
 
 					# Check formatting
-					my-crate-fmt = craneLib.cargoFmt {
+					cmdr-rs-fmt = craneLib.cargoFmt {
 						inherit src;
 					};
 
 					# Audit dependencies
-					my-crate-audit = craneLib.cargoAudit {
+					cmdr-rs-audit = craneLib.cargoAudit {
 						inherit src advisory-db;
 					};
 
 					# Run tests with cargo-nextest
-					# Consider setting `doCheck = false` on `my-crate` if you do not want
+					# Consider setting `doCheck = false` on `cmdr-rs` if you do not want
 					# the tests to run twice
-					my-crate-nextest = craneLib.cargoNextest (commonArgs // {
+					cmdr-rs-nextest = craneLib.cargoNextest (commonArgs // {
 						inherit cargoArtifacts;
 						partitions = 1;
 						partitionType = "count";
@@ -108,20 +108,20 @@
 				} // lib.optionalAttrs (system == "x86_64-linux") {
 					# NB: cargo-tarpaulin only supports x86_64 systems
 					# Check code coverage (note: this will not upload coverage anywhere)
-					my-crate-coverage = craneLib.cargoTarpaulin (commonArgs // {
+					cmdr-rs-coverage = craneLib.cargoTarpaulin (commonArgs // {
 						inherit cargoArtifacts;
 					});
 				};
 
 				packages = {
-					default = my-crate;
-					my-crate-llvm-coverage = craneLibLLvmTools.cargoLlvmCov (commonArgs // {
+					default = cmdr-rs;
+					cmdr-rs-llvm-coverage = craneLibLLvmTools.cargoLlvmCov (commonArgs // {
 						inherit cargoArtifacts;
 					});
 				};
 
 				apps.default = flake-utils.lib.mkApp {
-					drv = my-crate;
+					drv = cmdr-rs;
 				};
 
 				devShells.default = pkgs.mkShell {

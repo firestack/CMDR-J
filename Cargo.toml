@@ -1,5 +1,5 @@
 [package]
-name = "quick-start"
+name = "cmdr-rs"
 version = "0.1.0"
 edition = "2021"
 
