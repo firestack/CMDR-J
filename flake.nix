@@ -44,6 +44,7 @@
 					] ++ lib.optionals pkgs.stdenv.isDarwin [
 						# Additional darwin specific inputs can be set here
 						pkgs.libiconv
+						pkgs.trunk
 					];
 
 					# Additional environment variables can be set directly
@@ -134,6 +135,7 @@
 					nativeBuildInputs = with pkgs; [
 						cargo
 						rustc
+						trunk
 					];
 				};
 			});
