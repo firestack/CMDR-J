@@ -11,6 +11,9 @@
 	in {
 
 		packages = rec {
+			default = cmdr-j-standalone;
+			# default = cmdr-j-nixpkgs-standalone;
+
 			cmdr-j = pkgs.callPackage ./default.nix {};
 			cmdr-j-standalone = pkgs.callPackage ./graalvm.nix {
 				inherit (self.packages.${system}) cmdr-j;
@@ -20,7 +23,6 @@
 				version = "0.1.0";
 				src = cmdr-j;
 			};
-			default = cmdr-j-nixpkgs-standalone;
 		};
 
 		devShells = rec {
