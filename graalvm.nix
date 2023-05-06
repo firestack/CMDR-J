@@ -16,4 +16,6 @@
       mkdir -p $out/bin;
       cp CommanderJ $out/bin/
    '';
+
+	meta.mainProgram = "CommanderJ";
 })

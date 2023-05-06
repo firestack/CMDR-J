@@ -26,4 +26,6 @@
    '';
 
    NIX_DEBUG=5;
+
+	meta.mainProgram = "CommanderJ";
 }
