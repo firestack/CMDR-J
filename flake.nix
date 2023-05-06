@@ -15,12 +15,14 @@
 			cmdr-j-standalone = pkgs.callPackage ./graalvm.nix {
 				inherit (self.packages.${system}) cmdr-j;
 			};
+			cmdr-j-nixpkgs-standalone = pkgs.buildGraalvmNativeImage {
+				pname = "CommanderJ";
+				version = "0.1.0";
+				src = cmdr-j;
+			};
 			default = cmdr-j-nixpkgs-standalone;
 		};
-		cmdr-j-nixpkgs-standalone = pkgs.buildGraalvmNativeImage {
-			pname = "CommanderJ";
-			version = "0.1.0";
-			jar = cmdr-j;
+
 		};
 	});
 }
