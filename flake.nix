@@ -23,6 +23,13 @@
 			default = cmdr-j-nixpkgs-standalone;
 		};
 
+		devShells = rec {
+			default = java;
+			java = pkgs.mkShell {
+				packages = [
+					pkgs.jre_minimal
+				];
+			};
 		};
 	});
 }
