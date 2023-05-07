@@ -115,8 +115,9 @@
 						# cargo
 						# rustc
 						rustToolchain
-						packages.cargo-leptos
 
+						pkgs.cargo-generate
+						packages.cargo-leptos
 						pkgs.trunk
 					];
 				};
