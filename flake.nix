@@ -99,8 +99,12 @@
 				cmdr-rs-trunk = craneLib.buildTrunkPackage (commonArgs // {
 					inherit cargoArtifacts;
 				});
+
+				cmdr-rs-server = buildLeptosPackage (commonArgs // {
 					inherit cargoArtifacts;
 				});
+
+				cmdr-rs = cmdr-rs-server;
 
 				# Quick example on how to serve the app,
 				# This is just an example, not useful for production environments
