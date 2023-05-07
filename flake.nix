@@ -101,6 +101,8 @@
 
 				packages.default = cmdr-rs;
 
+				packages.cargo-leptos = pkgs.callPackage ./cargo-leptos.nix {};
+
 				apps.default = flake-utils.lib.mkApp {
 					drv = serve-app;
 				};
