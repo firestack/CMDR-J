@@ -77,7 +77,7 @@
 					${pkgs.python3Minimal}/bin/python3 -m http.server --directory ${cmdr-rs} 8000
 				'';
 			in
-			{
+			rec {
 				checks = {
 					# Build the crate as part of `nix flake check` for convenience
 					inherit cmdr-rs;
@@ -115,6 +115,7 @@
 						# cargo
 						# rustc
 						rustToolchain
+						packages.cargo-leptos
 
 						pkgs.trunk
 					];
