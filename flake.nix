@@ -67,7 +67,9 @@
 				# Build the actual crate itself, reusing the dependency
 				# artifacts from above.
 				# This derivation is a directory you can put on a webserver.
-				cmdr-rs = craneLib.buildTrunkPackage (commonArgs // {
+				cmdr-rs-trunk = craneLib.buildTrunkPackage (commonArgs // {
+					inherit cargoArtifacts;
+				});
 					inherit cargoArtifacts;
 				});
 
