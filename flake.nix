@@ -100,6 +100,7 @@
 				};
 
 				packages.default = cmdr-rs;
+				packages.cmdr-rs = cmdr-rs;
 
 				packages.cargo-leptos = pkgs.callPackage ./cargo-leptos.nix {};
 
