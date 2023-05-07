@@ -116,6 +116,11 @@
 						# rustc
 						rustToolchain
 
+						pkgs.pkg-config
+						pkgs.openssl
+						pkgs.dart-sass
+
+
 						pkgs.cargo-generate
 						packages.cargo-leptos
 						pkgs.trunk
