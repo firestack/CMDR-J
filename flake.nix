@@ -18,14 +18,20 @@
 				flake-utils.follows = "flake-utils";
 			};
 		};
+
+		devshell = {
+			url = "github:numtide/devshell";
+			inputs.nixpkgs.follows = "/nixpkgs";
+			inputs.flake-utils.follows = "/flake-utils";
+		};
 	};
 
-	outputs = { self, nixpkgs, crane, flake-utils, rust-overlay, ... }:
+	outputs = { self, nixpkgs, crane, flake-utils, rust-overlay, devshell, ... }:
 		flake-utils.lib.eachDefaultSystem (system:
 			let
 				pkgs = import nixpkgs {
 					inherit system;
-					overlays = [ (import rust-overlay) ];
+					overlays = [ (import rust-overlay) devshell.overlays.default ];
 				};
 
 				inherit (pkgs) lib;
@@ -54,7 +60,7 @@
 				commonArgs = {
 					inherit src;
 					# We must force the target, otherwise cargo will attempt to use your native target
-					CARGO_BUILD_TARGET = "wasm32-unknown-unknown";
+					# CARGO_BUILD_TARGET = "wasm32-unknown-unknown";
 				};
 
 				# Build *just* the cargo dependencies, so we can reuse
@@ -62,6 +68,13 @@
 				cargoArtifacts = craneLib.buildDepsOnly (commonArgs // {
 					# You cannot run cargo test on a wasm build
 					doCheck = false;
+
+
+					nativeBuildInputs = [
+						pkgs.pkg-config
+						pkgs.openssl
+						pkgs.dart-sass
+					];
 				});
 
 				buildLeptosPackage = {
@@ -102,6 +115,14 @@
 
 				cmdr-rs-server = buildLeptosPackage (commonArgs // {
 					inherit cargoArtifacts;
+
+					cargoExtraArgs = "--features ssr";
+
+					nativeBuildInputs = [
+						pkgs.pkg-config
+						pkgs.openssl
+						pkgs.dart-sass
+					];
 				});
 
 				cmdr-rs = cmdr-rs-server;
@@ -143,24 +164,32 @@
 					drv = serve-app;
 				};
 
-				devShells.default = pkgs.mkShell {
-					inputsFrom = builtins.attrValues self.checks;
-
-					# Extra inputs can be added here
-					nativeBuildInputs = [
-						# cargo
-						# rustc
-						rustToolchain
-
-						pkgs.pkg-config
-						pkgs.openssl
-						pkgs.dart-sass
+				devShells = rec {
+				# devShells = assert false; rec {
+					default = cmdr-rs;
+					cmdr-rs = pkgs.devshell.mkShell {
+						# inputsFrom = builtins.attrValues self.checks;
 
 
-						pkgs.cargo-generate
-						packages.cargo-leptos
-						pkgs.trunk
-					];
+						env = nixpkgs.lib.mapAttrsToList (nixpkgs.lib.nameValuePair) { RUST_SRC_PATH = pkgs.rust-bin.nightly.latest.rust-src; };
+						# Extra inputs can be added here
+						packages = [
+							# cargo
+							# rustc
+							rustToolchain
+							pkgs.rust-bin.nightly.latest.rust-analyzer
+							pkgs.rust-bin.nightly.latest.rust-src
+
+							pkgs.pkg-config
+							pkgs.openssl
+							pkgs.dart-sass
+
+
+							pkgs.cargo-generate
+							packages.cargo-leptos
+							pkgs.trunk
+						];
+					};
 				};
 			});
 }
